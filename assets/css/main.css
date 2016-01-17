@@ -438,10 +438,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
-.header {
-  height: 50px;
-  background-color: #21a1e1;
-  width: 100%; }
+.margin-10 {
+  margin-left: 10px;
+  margin-right: 10px; }
 
-.container {
-  width: 960px; }
+/**
+  *  Header
+  */
+.header .container {
+  max-width: 100%; }
+
+.section-featured {
+  margin-top: 50px;
+  position: relative; }
+  .section-featured .container-fluid {
+    margin: 0;
+    padding: 0; }
