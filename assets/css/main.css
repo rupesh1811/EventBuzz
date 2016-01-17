@@ -451,6 +451,24 @@ body {
 .section-featured {
   margin-top: 50px;
   position: relative; }
-  .section-featured .container-fluid {
-    margin: 0;
-    padding: 0; }
+
+@media screen and (min-width: 768px) {
+  .bx-wrapper .bx-caption {
+    top: 100%; } }
+
+@media screen and (min-width: 768px) {
+  .bx-wrapper .bx-caption span {
+    font-size: 1.7em !important;
+    padding: 25px !important; } }
+
+@media screen and (min-width: 768px) {
+  .bx-wrapper:hover .bx-caption {
+    top: 95%; } }
+
+@media screen and (min-width: 768px) {
+  .bx-wrapper ul li {
+    max-height: 600px; } }
+
+.container-fluid {
+  margin: 0;
+  padding: 0; }

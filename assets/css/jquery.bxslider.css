@@ -103,7 +103,7 @@
   width: 32px;
   height: 32px;
   text-indent: -9999px;
-  z-index: 9999; }
+  z-index: 3; }
 
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none; }
@@ -150,20 +150,21 @@
 /* IMAGE CAPTIONS */
 .bx-wrapper .bx-caption {
   position: absolute;
-  bottom: -5%;
+  top: 100%;
   left: 0;
   background: #666\9;
   background: rgba(80, 80, 80, 0.75);
   width: 100%;
-  -webkit-transition: bottom .5s ease-in-out;
-          transition: bottom .5s ease-in-out; }
+  height: 100px;
+  -webkit-transition: top .5s ease-in-out;
+          transition: top .5s ease-in-out; }
 
 .bx-wrapper:hover .bx-caption {
-  bottom: 0px; }
+  top: 85%; }
 
 .bx-wrapper .bx-caption span {
   color: #fff;
   font-family: Arial;
   display: block;
-  font-size: 2em;
-  padding: 40px; }
+  font-size: 1em;
+  padding: 13px; }
