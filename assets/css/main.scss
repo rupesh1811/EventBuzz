@@ -1,5 +1,4 @@
 @import "0-tools/bourbon/bourbon";
-@import "0-tools/normalize";
 
 @import "1-base/vars";
 @import "1-base/base";
@@ -8,3 +7,5 @@
 @import "2-modules/section-latest"; 
 @import "2-modules/section-featured";
 @import "2-modules/section-nearby";
+@import "2-modules/section-signup"; 
+@import "2-modules/footer"; 
