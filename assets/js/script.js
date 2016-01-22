@@ -1,10 +1,4 @@
 $(document).ready(function(){
-  $('.bxslider').bxSlider({
-  	preloadImages: 'all',
-  	pager: false,
-  	captions: true,
-  	auto: true
-  	});
 
    var submitIcon = $('.searchbox-icon'),
     inputBox = $('.searchbox-input'),

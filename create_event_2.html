@@ -121,53 +121,70 @@
       <div class="col-sm-8">
         <div class="create-wrapper tiles">
           <div class="create-header">
-            <h3 class="create-title">Step 1/4</h3>
-            <h4> <span class="glyphicon glyphicon-pencil pull-right"> </span>Create your Event</h4>
+            <h3 class="create-title">Step 2/4</h3>
+            <h4> <span class="glyphicon glyphicon-info-sign pull-right"></span>Add More Info</h4>
+            <div class="step prev"></div>
             <div class="step active"></div>
             <div class="step"></div>
             <div class="step"></div>
-            <div class="step"></div>
           </div>
-          <form action="/create_event_2.html" method="post" class="form-horizontal">
+          <form action="/create_event_3.html" method="post" class="form-horizontal">
             <div class="form-group">
-              <label for="eventTitle" class="col-sm-2 control-label">Event Title</label>
+              <div class="col-sm-12">
+                <textarea placeholder="Enter Event Description" class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="eventType" class="col-sm-2 control-label">Event Type</label>
               <div class="col-sm-10">
-                <input id="eventTitle" type="text" placeholder="Event Title" class="form-control"/>
+                <label class="radio-inline">
+                  <input type="radio" name="eventType"/>Ticketing 
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="eventType"/>RSVP
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="eventType"/>Registration
+                </label>
               </div>
             </div>
             <div class="form-group">
-              <label for="eventLocation" class="col-sm-2 control-label">Location</label>
+              <label for="segment" class="col-sm-2 control-label">Segment </label>
               <div class="col-sm-10">
-                <input id="eventLocation" type="text" placeholder="Event Location/Venue" data-map-container-id="collapseOne" data-latitude-input="#lat" data-longitude-input="#lon" class="form-control placepicker"/>
-                <input type="hidden" name="lat" id="lat"/>
-                <input type="hidden" name="lon" id="lon"/>
+                <select id="segment" class="form-control">
+                  <option>Entertainment</option>
+                  <option>Alumni &amp; Campus</option>
+                  <option>Active &amp; Outdoor</option>
+                  <option>Biz &amp; Tech</option>
+                  <option>Sports &amp; Fitness</option>
+                  <option>Interests</option>
+                </select>
               </div>
-            </div>
-            <div id="collapseOne" class="collapse">
-              <div id="thumbnail" class="placepicker-map"></div>
             </div>
             <div class="form-group">
-              <label for="startDate" class="col-sm-2 control-label">Start Date</label>
-              <div class="col-sm-4">
-                <input id="startDate" type="text" placeholder="Start Date" class="form-control datepicker"/>
-              </div>
-              <label for="endDate" class="col-sm-2 control-label">End Date</label>
-              <div class="col-sm-4">
-                <input id="endDate" type="text" placeholder="End Date" class="form-control datepicker"/>
+              <label for="category" class="col-sm-2 control-label">Category</label>
+              <div class="col-sm-10">
+                <select id="segment" class="form-control">
+                  <option>Celebrations</option>
+                  <option>Performance</option>
+                  <option>Art &amp; Theater</option>
+                  <option>Shows &amp; Tv</option>
+                </select>
               </div>
             </div>
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">
-                <input type="submit" value="Create" class="btn btn-danger btn-lg pull-right"/>
+                <input type="submit" value="Next" class="btn btn-danger pull-right btn-lg"/>
               </div>
             </div>
           </form>
-          <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-          <script src="/assets/js/jquery.placepicker.js"></script>
-          <script src="/assets/js/create_event.js"></script>
         </div>
       </div>
       <div class="col-sm-4">
+        <div class="tiles">
+          <h4>Test</h4>
+          <p>23 January 2016 - 23 January 2016<br> Indiranagar, Bengaluru, Karnataka - 560031</p>
+        </div>
         <div class="tiles">
           <div class="create-feature-header">
             <h4 class="create-title">Hassle free Ticketing Solution</h4>

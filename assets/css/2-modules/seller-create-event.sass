@@ -1,0 +1,68 @@
+.bg
+	position: fixed
+	top: 0
+	left: 0
+	min-height: 100%
+	min-width: 1024px
+	width: 100%
+	height: auto
+	background: url('/assets/img/event-bg.png') no-repeat center center fixed
+	background-size: cover
+	overflow-y: hidden
+
+.tiles
+	background-color: #FFF
+	margin: 50px auto 0
+	padding: 20px 30px
+
+
+
+.seller-create
+	.create-wrapper
+
+		.btn-file
+			position: relative
+			overflow: hidden
+
+			input[type="file"]
+				position: absolute
+				top: 0
+				right: 0
+				min-width: 100%
+				min-height: 100%
+				font-size: 100px
+				text-align: right
+				filter: alpha(opacity=0)
+				opacity: 0
+				outline: none
+				background: white
+				cursor: inherit
+				display: block
+
+		.create-header
+			margin-bottom: 20px
+			
+		.glyphicon-ticket
+			width: 22px
+			height: 22px
+			background: url('/assets/img/icon-ticketing.svg')
+			background-size: contain
+		.step
+			height: 4px
+			width: 24.1%
+			display: inline-block
+			background-color: #ccc
+			&.prev
+				background-color: rgba($accent-color, .5)
+			&.active
+				background-color: $accent-color
+
+	.create-feature-body
+		ul
+			li
+				margin: 10px 0px 0px
+
+				img
+					margin-right: 30px
+				span
+					font-size: 1.2em
